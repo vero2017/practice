@@ -20,7 +20,7 @@ using namespace std;
 
 int main () {
 	{
-		Car c1("Opel Corsa", 1992, 980);
+		Car c1("Opel Corsa", 1992, 890);
 		cout << "count: " << Car::count << endl;
 
 
