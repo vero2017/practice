@@ -18,7 +18,7 @@
 
 using namespace std;
 
-ostream & operator<<(ostream &output, Car &car);
+//ostream& operator<<(ostream &output, Car &car);
 //void printCar(ostream out, Car car);
 
 int main () {
@@ -40,8 +40,9 @@ int main () {
 	return 0;
 }
 
-ostream & operator<<(ostream &output, Car &car) {
-	return output << car.getModel() << ", tömeg: " << car.getWeight() << ", év: " << car.getYear() << endl;
+ostream& operator<<(ostream &output, Car &car) {
+	return output << car.getModel() << ", tömeg: " << car.getWeight() << ", év: " << car.getYear()
+			<< ", titok: " << car.secret << endl;
 	// mivel az "<<" operátor viszatérési értéke maga az ostream (esetünkben a cout) ezért ha
 	// returnölöm az egész kifejezést az ugyanolyan mintha azt írnám, hogy return output;
 }

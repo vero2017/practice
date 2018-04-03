@@ -19,13 +19,12 @@ using namespace std;
 Car::Car(string modelToSet, unsigned int yearToSet, unsigned int weightToSet): Year(yearToSet), Weight(weightToSet), Model(modelToSet)
 {
 	Car::count++;
-	Trunk = new char[25];
+	secret = 12345;
 }
 
 Car::~Car()
 {
 	--Car::count;
-	delete[] Trunk;
 }
 
 unsigned int Car::getYear() {

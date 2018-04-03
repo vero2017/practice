@@ -26,12 +26,15 @@ class Car {
 	//  void setModel (string modelToSet);
 
 		static unsigned int count;
-		char *Trunk;
+		string Trunk;
+
+		friend ostream& operator<<(ostream &output, Car &car);
 
 	private:
 		unsigned int Year;
 		unsigned int Weight;
 		string Model;
+		unsigned int secret;
 };
 
 #endif /* CAR_H_ */
